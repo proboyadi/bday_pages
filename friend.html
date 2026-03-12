@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🌸</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="friend.css">
+</head>
+<body class="locked">
+
+<div id="envelope-modal">
+    <div class="modal-stars" id="modal-stars"></div>
+    <div class="envelope-wrapper">
+        <h1 class="envelope-title">🌸 A Special Message</h1>
+        <p class="envelope-subtitle">Something beautiful is waiting for you...</p>
+        <div class="envelope-svg-wrap">
+            <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                <rect x="5" y="40" width="210" height="115" rx="10" fill="#f7c5d0" stroke="#e8839a" stroke-width="2"/>
+                <polygon points="5,40 110,110 215,40" fill="#f0a0bb" stroke="#e8839a" stroke-width="2"/>
+                <polygon points="5,40 5,155 80,97" fill="#f4b8cc"/>
+                <polygon points="215,40 215,155 140,97" fill="#f4b8cc"/>
+                <text x="95" y="130" font-size="28" fill="#c45c75">💌</text>
+                <text x="15" y="30" font-size="16">✨</text>
+                <text x="185" y="30" font-size="16">✨</text>
+            </svg>
+        </div>
+        <button id="open-btn" class="open-btn">Open with Love 💖</button>
+    </div>
+</div>
+
+<div id="main-wrapper">
+    <div id="particles-container"></div>
+
+    <header id="navbar">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Her</a>
+            <a href="#cake-section">Cake 🎂</a>
+            <a href="#gallery">Memories</a>
+            <a href="#wishes-corner">Wishes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="fairy-lights" id="fairy-lights"></div>
+            <div class="hero-flowers" style="top:10%;left:5%;font-size:3rem;animation:floatUp 12s linear infinite;">🌸</div>
+            <div class="hero-flowers" style="top:20%;right:8%;font-size:2rem;animation:floatUp 9s linear infinite 2s;">🌷</div>
+            <div class="hero-flowers" style="top:60%;left:3%;font-size:1.5rem;animation:floatUp 14s linear infinite 4s;">🌼</div>
+            <div class="hero-flowers" style="top:70%;right:5%;font-size:2.5rem;animation:floatUp 11s linear infinite 1s;">🌺</div>
+            <div class="hero-content">
+                <div class="hero-badge reveal">✨ Celebrating You ✨</div>
+                <h1 class="reveal">Happy Birthday</h1>
+                <!-- EDIT: Replace with her name -->
+                <div class="hero-name reveal">[Your Friend's Name]</div>
+                <!-- EDIT: Change this message if you want -->
+                <p class="hero-sub reveal">
+                    To someone who makes every day brighter just by being in it —
+                    today is entirely yours. 🌸
+                </p>
+                <div class="countdown-wrap reveal">
+                    <p class="countdown-label" id="countdown-label">✨ Counting down to your special day...</p>
+                    <div id="countdown">
+                        <div class="time-box"><span id="days">00</span><p>Days</p></div>
+                        <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+                        <div class="time-box"><span id="minutes">00</span><p>Mins</p></div>
+                        <div class="time-box"><span id="seconds">00</span><p>Secs</p></div>
+                    </div>
+                    <div class="birthday-msg" id="birthday-msg">🎉 IT'S YOUR BIRTHDAY! 🎂 Happy Birthday, Beautiful! 🌸</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>✨ The Girl of the Day</h2>
+                    <div class="petal-divider">🌸 🌷 🌸</div>
+                </div>
+                <div class="profile-card reveal">
+                    <div class="profile-pic-wrap">
+                        <div class="profile-pic-ring"></div>
+                        <!-- EDIT: Replace "friend.jpg" with her actual photo filename -->
+                        <img src="friend.jpg" alt="Birthday Girl" class="profile-pic"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'220\' height=\'220\'%3E%3Ccircle cx=\'110\' cy=\'110\' r=\'110\' fill=\'%23f7c5d0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'80\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E🌸%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <div class="profile-text">
+                        <!-- EDIT: Replace [Name] with her name -->
+                        <h2>🌷 Our Dearest [Name]</h2>
+                        <!-- EDIT: Write your personal message here -->
+                        <p>
+                            You are one of those rare people who lights up every room she walks into.
+                            Your laughter is contagious, your heart is pure gold, and your friendship
+                            is one of the greatest gifts in my life. Today is all about celebrating YOU —
+                            the beautiful, brilliant, and incredible person you are. Wishing you a day
+                            as magical as you make mine every single day. 🌷
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cake-section" class="page-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>🎂 Make a Wish!</h2>
+                    <p>Click the candles to blow them out, one by one...</p>
+                </div>
+                <div class="cake-scene reveal">
+                    <div class="cake" id="birthday-cake">
+                        <div class="candles-row" id="candles-row"></div>
+                        <div class="cake-tier tier-1"><div class="cake-deco">🌸 🎀 🌸</div></div>
+                        <div class="cake-tier tier-2"><div class="cake-deco">🌷 ✨ 🌷 ✨ 🌷</div></div>
+                        <div class="cake-tier tier-3"><div class="cake-deco">🌼 💖 🌼 💖 🌼 💖</div></div>
+                        <div class="cake-plate"></div>
+                    </div>
+                </div>
+                <p style="color:var(--text-mid);font-style:italic;margin-top:5px;">Click each candle to blow it out ✨</p>
+                <button class="blow-btn" id="blow-all-btn">💨 Blow All Candles!</button>
+                <div class="cake-wish" id="cake-wish">
+                    🌟 Your wish has been sent to the stars! May all your dreams come true! 🌟
+                </div>
+            </div>
+        </section>
+
+        <section id="surprise" class="page-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>🎁 Secret Message</h2>
+                    <p>Scratch the golden card to reveal a hidden surprise...</p>
+                </div>
+                <div class="scratch-card-box reveal">
+                    <!-- EDIT: Change the secret message inside -->
+                    <div class="scratch-message">
+                        <p>"You are one in a million — no, one in a universe. Happy Birthday, superstar! 🌟 You deserve every beautiful thing life has to offer. Always. 💖"</p>
+                    </div>
+                    <canvas id="scratch-canvas" width="320" height="160"></canvas>
+                </div>
+                <p style="color:var(--text-mid);font-size:0.85rem;margin-top:10px;font-style:italic;">Scratch with your mouse or finger ✨</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="page-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>📸 Our Scrapbook</h2>
+                    <p>Little memories pasted with love...</p>
+                    <div class="petal-divider">🌸 🌷 🌸</div>
+                </div>
+                <div class="notebook-grid reveal">
+                    <!-- EDIT: Replace photo1.jpg etc. with your real photo filenames -->
+                    <!-- EDIT: Change captions to match your memories -->
+                    <div class="photo-frame">
+                        <div class="tape"></div>
+                        <img src="photo1.jpg" class="notebook-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'240\' height=\'200\'%3E%3Crect width=\'240\' height=\'200\' fill=\'%23fce8f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'50\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E🌸%3C/text%3E%3C/svg%3E'">
+                        <p class="caption">beautiful memory ✨</p>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="tape"></div>
+                        <img src="photo2.jpg" class="notebook-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'240\' height=\'200\'%3E%3Crect width=\'240\' height=\'200\' fill=\'%23ede0f8\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'50\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E🌷%3C/text%3E%3C/svg%3E'">
+                        <p class="caption">sweet moments 🌷</p>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="tape"></div>
+                        <img src="photo3.jpg" class="notebook-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'240\' height=\'200\'%3E%3Crect width=\'240\' height=\'200\' fill=\'%23fce8f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'50\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E💖%3C/text%3E%3C/svg%3E'">
+                        <p class="caption">forever friends 💖</p>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="tape"></div>
+                        <img src="photo4.jpg" class="notebook-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'240\' height=\'200\'%3E%3Crect width=\'240\' height=\'200\' fill=\'%23d9c8f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'50\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E🌺%3C/text%3E%3C/svg%3E'">
+                        <p class="caption">always smiling 🌺</p>
+                    </div>
+                    <!-- To add more photos: copy one photo-frame block above and paste here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="wishes-corner" class="page-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>💝 Wishes Corner</h2>
+                    <p>Messages from the people who love you 🌸</p>
+                    <div class="petal-divider">🌸 🌷 🌸</div>
+                </div>
+                <!-- Wishes are loaded from friend.js → WISHES array -->
+                <div id="wishes-display-grid" class="notebook-grid"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="footer-heart">Made with love 💖</span>
+        <p>For the most amazing friend — Happy Birthday! 🌸</p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.6;">© 2026 · Created with 💕</p>
+    </footer>
+</div>
+
+<script src="friend.js"></script>
+</body>
+</html>
