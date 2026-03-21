@@ -103,7 +103,7 @@ const musicBtn = document.getElementById('music-toggle');
 function setupMusic() {
     try {
         music = new Audio('happy-birthday-334876.mp3');
-        music.loop = true; music.volume = 0.35;
+        music.loop = true; music.volume = 0.4;
     } catch(e) {}
 }
 if (musicBtn) {
@@ -150,7 +150,7 @@ document.getElementById('open-btn').addEventListener('click', function() {
 const LINES = [
     "Some people make the world more beautiful just by existing...",
     "You are undeniably one of them 🌷",
-    "Happy Birthday, gorgeous soul ✨",
+    "Happy Birthday, sweet soul ✨",
     "May every dream you carry bloom like a flower 🌸",
     "The world is simply better with you in it 💖",
 ];
